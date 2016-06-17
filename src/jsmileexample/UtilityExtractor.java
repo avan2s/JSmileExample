@@ -24,7 +24,6 @@ public class UtilityExtractor {
     public GNodeValueInformation extract(String nodeName){
         this.resetExtractor();
         this.utilityInformation.setNodeName(nodeName);
-        int index = solvedNet.getValueIndexingParents(nodeName)[0];
         
         int[] levelIndices = this.solvedNet.getValueIndexingParents(nodeName);
         int numberOfLevels = levelIndices.length;
