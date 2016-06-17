@@ -1,0 +1,140 @@
+net 
+{
+    node_size = (76 36);
+}
+
+decision E1
+{
+    label = "E1";
+    position = (316 96);
+    states = ("A"  "B");
+}
+
+decision E2
+{
+    label = "E2";
+    position = (440 97);
+    states = ("A"  "B");
+}
+
+utility U1
+{
+    label = "U1";
+    position = (317 152);
+}
+
+utility U2
+{
+    label = "U2";
+    position = (436 149);
+}
+
+decision E3
+{
+    label = "E3";
+    position = (561 95);
+    states = ("A"  "B");
+}
+
+node S0
+{
+    label = "S0";
+    position = (254 35);
+    states = ("gut"  "schlecht");
+}
+
+node S1
+{
+    label = "S1";
+    position = (356 32);
+    states = ("gut"  "schlecht");
+}
+
+node Node10
+{
+    label = "Node10";
+    position = (464 32);
+    states = ("State0"  "State1");
+}
+
+utility U3
+{
+    label = "U3";
+    position = (557 148);
+}
+
+utility R1
+{
+    label = "R1";
+    position = (304 -13);
+}
+
+utility R2
+{
+    label = "R2";
+    position = (412 -18);
+}
+
+potential (E1 |)
+{
+}
+
+potential (E2 | E1)
+{
+}
+
+potential (U1 | E1)
+{
+    data = (200.00000000 300.00000000);
+}
+
+potential (U2 | E1 E2)
+{
+    data = ((-120.00000000 150.00000000)
+        (100.00000000 -100.00000000));
+}
+
+potential (E3 | E2)
+{
+}
+
+potential (S0 |)
+{
+    data = (0.40000000 0.60000000);
+}
+
+potential (S1 | E1 S0)
+{
+    data = (((0.95000000 0.05000000)
+        (0.35000000 0.65000000))
+        ((0.20000000 0.80000000)
+        (0.40000000 0.60000000)));
+}
+
+potential (Node10 | E2 S1)
+{
+    data = (((0.95000000 0.05000000)
+        (0.85000000 0.15000000))
+        ((0.20000000 0.80000000)
+        (0.99000000 0.01000000)));
+}
+
+potential (U3 | E2 E3 Node10)
+{
+    data = (((-100.00000000 -100.00000000)
+        (150.00000000 200.00000000))
+        ((100.00000000 400.00000000)
+        (-100.00000000 -100.00000000)));
+}
+
+potential (R1 | S0 S1)
+{
+    data = ((1.00000000 -10.00000000)
+        (10.00000000 -1.00000000));
+}
+
+potential (R2 | S1 Node10)
+{
+    data = ((1.00000000 -10.00000000)
+        (10.00000000 -1.00000000));
+}
