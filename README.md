@@ -8,8 +8,8 @@
 <font size="3D&quot;2&quot;" face="3D&quot;sans-serif&quot;">2\. Sein Personendokument sollte in= folgenden Punkten angepasst werden:</font>
 
 *   <font size="3D&quot;2&quot;" face="3D&quot;sans-serif&quot;">Allgemein > Mailsystem: And= ere Internet-Mail</font>
-*   <font size="3D&quot;2&quot;" face="3D&quot;sans-serif&quot;">Allgemein > Weiterleitungsa= dresse: Abnahme003.Benutzer@id.dvag-test.com</font>
-*   <font size="3D&quot;2&quot;" face="3D&quot;sans-serif&quot;">Verschiedenes > Kalenderdom= =E4ne: COEXISTDVAG</font>
+*   <font size="3D&quot;2&quot;" face="3D&quot;sans-serif&quot;">Allgemein > Weiterleitungsa= dresse: Abnahme003.Benutzer@test.com</font>
+*   <font size="3D&quot;2&quot;" face="3D&quot;sans-serif&quot;">Verschiedenes > Kalenderdom= =E4ne: COEXISTTest</font>
 *   <font size="3D&quot;2&quot;" face="3D&quot;sans-serif&quot;">Administration > Synchronis= ierung mit fremdem Verzeichnis zulassen: Nein</font>
 
 <font size="3D&quot;2&quot;" face="3D&quot;sans-serif&quot;">Das meiste davon wird ins Leere la= ufen, und den Notes-Mailbenutzer unbrauchbar machen -- aber so sieht da= s Testszenario nun 'mal aus  ;-) Bitte sag Bescheid, wenn eine der= Einstellungen negative Seiteneffekte haben k=F6nnte.</font>
